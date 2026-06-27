@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Замовити послугу</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header1">
+      <h1 class="logo">OM</h1>
+      
+      <nav class="nav-menu">
+        <a href="index.html"><p>Про мене</p></a>
+        <a href="index.html#skills"><p>Moї вміння</p></a>
+        <a href="projects.html"><p>Мої проекти</p></a>
+
+        <a href="zamoviti.en.html" class="lang-switch">EN</a>
+      </nav>
+    </header>
+
+    <main class="order-section">
+      <h1 class="order-title">Зробити замовлення</h1>
+      <p class="order-subtitle">Заповніть форму нижче, і я зв'яжуся з вами найближчим часом!</p>
+
+      <div class="form-container">
+        <form action="#" method="POST" onsubmit="alert('Дякую за замовлення!'); return false;">
+          
+          <div class="form-group">
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail для зв'язку:</label>
+            <input type="email" id="email" name="email" placeholder="yourname@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="service">Оберіть послугу:</label>
+            <select id="service" name="service" required>
+              <option disabled selected>-- Оберіть варіант --</option>
+              <option>Калькулятор - 500грн</option>
+              <option>Мессенджер - 10000грн</option>
+              <option>Онлайн-Магазин - 8000грн</option>
+              <option>Гра - 20000грн</option>
+              <option>Інший серйозний проект - 1000000грн</option>
+              <option>Інший не серйозний проект - 1грн</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Деталі замовлення:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Опишіть ваше завдання або побажання..." required></textarea>
+          </div>
+
+          <button type="submit" class="form-submit-btn">Надіслати замовлення</button>
+
+        </form>
+      </div>
+    </main>
+
+    <br>
+    <br>
+
+    <footer>
+      <h2>Onyshchenko Mykhailo</h2>
+      <br>
+      <a href="https://facebook.com" target="_blank" style="color: white; margin: 0 10px; text-decoration: none;"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank" style="color: white; margin: 0 10px; text-decoration: none;"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com" target="_blank" style="color: white; margin: 0 10px; text-decoration: none;"><i class="fab fa-youtube"></i></a>
+      <br><br>
+      <p class="footer-p">©Created By Onyshchenko Mykhailo ⠀⠀⠀All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

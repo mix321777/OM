@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order a Service</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header1">
+      <h1 class="logo">OM</h1>
+      
+      <nav class="nav-menu">
+        <a href="index.en.html"><p>About Me</p></a>
+        <a href="index.en.html#skills"><p>My skills</p></a>
+        <a href="projects.en.html"><p>My projects</p></a>
+        
+        <a href="zamoviti.html" class="lang-switch">UK</a>
+      </nav>
+    </header>
+
+    <main class="order-section">
+      <h1 class="order-title">Place an Order</h1>
+      <p class="order-subtitle">Fill out the form below and I'll get back to you as soon as possible!</p>
+
+      <div class="form-container">
+        <form action="#" method="POST" onsubmit="alert('Thank you for your order!'); return false;">
+          
+          <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Contact E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="yourname@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="service">Choose a Service:</label>
+            <select id="service" name="service" required>
+              <option disabled selected>-- Select an option --</option>
+              <option>Calculator - $12</option>
+              <option>Messenger - $220</option>
+              <option>Online store - $180</option>
+              <option>Game - $450</option>
+              <option>Other serious project - $22,000</option>
+              <option>Other not serious project - $1</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Order Details:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Describe your task or requirements..." required></textarea>
+          </div>
+
+          <button type="submit" class="form-submit-btn">Submit Order</button>
+
+        </form>
+      </div>
+    </main>
+
+    <br>
+    <br>
+
+    <footer>
+      <h2>Onyshchenko Mykhailo</h2>
+      <br>
+      <a href="https://facebook.com" target="_blank" style="color: white; margin: 0 10px; text-decoration: none;"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank" style="color: white; margin: 0 10px; text-decoration: none;"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com" target="_blank" style="color: white; margin: 0 10px; text-decoration: none;"><i class="fab fa-youtube"></i></a>
+      <br><br>
+      <p class="footer-p">©Created By Onyshchenko Mykhailo ⠀⠀⠀All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
